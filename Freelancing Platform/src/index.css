@@ -1,0 +1,264 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --def-transition-duration: .2s;
+  --primary-color: #9E70EB;
+  --hover-color: #E8E8E8;
+  --dropdown-bg: #212224;
+  --dropdown-hover-bg: #2C2D2F;
+  --text-color: #A1A2A3;
+  --text-hover-color: #E8E8E8;
+}
+
+html {
+  font-size: 16px;
+  font-family: 'Figtree', sans-serif;
+  line-height: 1.5;
+  margin: 0;
+}
+
+body {
+  margin: 0;
+}
+
+img {
+  display: block;
+}
+
+#main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin: 0 auto;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 3rem;
+}
+
+nav ul a {
+  text-decoration: none;
+  color: var(--text-color);
+  display: inline-block;
+  padding: 1.5rem 0;
+  transition: color var(--def-transition-duration);
+}
+
+nav ul a:hover {
+  color: var(--text-hover-color);
+}
+
+.has-submenu {
+  position: relative;
+  display: flex;
+  gap: .5rem;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.has-submenu::after {
+  height: 25px;
+  transition: opacity var(--def-transition-duration);
+}
+
+.has-submenu:hover::after {
+  opacity: 1;
+}
+
+.has-submenu:hover>a {
+  color: var(--text-hover-color);
+}
+
+.has-submenu ul {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: linear-gradient(to bottom,
+      #a0c4ff,
+      /* Light Blue */
+      #5fa8d3,
+      /* Soft Blue */
+      #48bfe3,
+      /* Sky Blue */
+      #caf0f8
+      /* Very Light Blue */
+    );
+
+
+  border-radius: .5rem;
+  padding: .5rem;
+  display: none;
+  transition: opacity var(--def-transition-duration);
+}
+
+.has-submenu:hover ul {
+  display: block;
+}
+
+.has-submenu ul a {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  min-width: 15rem;
+  border-radius: .5rem;
+  color: black;
+  transition: background-color var(--def-transition-duration), color var(--def-transition-duration);
+}
+
+.has-submenu ul a:hover {
+  background-color: var(--dropdown-hover-bg);
+  color: var(--text-hover-color);
+}
+
+.has-submenu ul a::after {
+  content: url('icons/icon-arrow-right.svg');
+  height: 17px;
+  opacity: 0;
+  transition: opacity var(--def-transition-duration);
+}
+
+.has-submenu ul a:hover::after {
+  opacity: 1;
+}
+
+button {
+  appearance: none;
+  border: 1px solid var(--primary-color);
+  color: var(--primary-color);
+  background-color: transparent;
+  border-radius: 10rem;
+  padding: .75rem 1.5rem;
+  cursor: pointer;
+  transition: background-color var(--def-transition-duration), color var(--def-transition-duration);
+}
+
+button:hover {
+  background-color: var(--primary-color);
+  color: #fff;
+}
+
+@media (max-width: 1024px) {
+
+  /* Mobile Menu Button */
+  #main-header .lg\\:hidden {
+    display: block;
+  }
+
+  /* Hide desktop menu on mobile */
+  nav ul {
+    display: none;
+  }
+
+  /* Mobile Menu */
+  nav.mobile-menu {
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: var(--dropdown-bg);
+    border-top: 1px solid #333;
+    padding: 1rem;
+  }
+
+  nav.mobile-menu ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  nav.mobile-menu ul a {
+    padding: 1rem;
+    color: var(--text-color);
+  }
+
+  nav.mobile-menu ul a:hover {
+    background-color: var(--dropdown-hover-bg);
+    color: var(--text-hover-color);
+  }
+
+  /* Show mobile menu on toggle */
+  .mobile-menu-open {
+    display: block;
+  }
+}
+
+.footer {
+  background-color: #37022a;
+  color: #fff;
+  padding: 40px 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.footer-col-1,
+.footer-col-2,
+.footer-col-3,
+.footer-col-4 {
+  flex-basis: 25%;
+  min-width: 200px;
+  margin-bottom: 20px;
+}
+
+.footer-col-1 h3,
+.footer-col-3 h3,
+.footer-col-4 h3 {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.footer-col-1 p {
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.app-logo img {
+  width: 140px;
+  margin-right: 10px;
+}
+
+.footer-col-2 img {
+  width: 180px;
+}
+
+.footer-col-3 ul,
+.footer-col-4 ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-col-3 ul li,
+.footer-col-4 ul li {
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.footer-col-3 ul li:hover,
+.footer-col-4 ul li:hover {
+  color: #ff523b;
+  cursor: pointer;
+}
+
+.footer-col-4 ul li {
+  margin-bottom: 10px;
+}
