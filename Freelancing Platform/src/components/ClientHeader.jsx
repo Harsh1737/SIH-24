@@ -1,6 +1,8 @@
 import React from 'react';
 import svg from '../assets/svg.jpg'
-function Header() {
+import '../index.css'
+
+function ClientHeader() {
   return (
     <div className="h-20 flex justify-between items-center p-4 bg-white rounded-md shadow">
       <div className="text-2xl font-bold text-blue-600">logo</div>
@@ -26,4 +28,4 @@ function Header() {
   );
 }
 
-export default Header;
+export default ClientHeader;

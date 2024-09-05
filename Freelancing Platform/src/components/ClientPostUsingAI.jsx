@@ -1,6 +1,9 @@
 import { useEffect } from "react";
+import { Link } from "react-router-dom";
 import backgroundImage from "../assets/bg.svg";
-const EmpPostUsingAI = () => {
+import "../index.css";
+
+const ClientPostUsingAI = () => {
   useEffect(() => {
     document.body.style.backgroundColor = "#f0f0f0";
     document.body.style.backgroundImage = `url(${backgroundImage})`;
@@ -34,9 +37,11 @@ const EmpPostUsingAI = () => {
           </div>
         </div>
         <div className="flex flex-wrap justify-between py-5 px-16 w-full">
-          <button className="text-green-500 bg-slate-200 font-semibold text-2xl border-2 border-gray-400 bg-transparent rounded-xl px-9 py-3">
-            Back
-          </button>
+          <Link to="/emp-login">
+            <button className="text-green-500 bg-slate-200 font-semibold text-2xl border-2 border-gray-400 bg-transparent rounded-xl px-9 py-3">
+              Back
+            </button>
+          </Link>
           <button className="text-black bg-slate-200 font-semibold text-2xl border-2 border-gray-400 bg-transparent rounded-xl px-9 py-3">
             Continue
           </button>
@@ -46,4 +51,4 @@ const EmpPostUsingAI = () => {
   );
 };
 
-export default EmpPostUsingAI;
+export default ClientPostUsingAI;

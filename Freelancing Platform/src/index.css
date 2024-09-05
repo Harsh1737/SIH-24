@@ -61,6 +61,8 @@ nav ul a:hover {
   gap: .5rem;
   align-items: center;
   justify-content: flex-start;
+  padding-top: 0px;
+  padding-bottom: 24px;
 }
 
 .has-submenu::after {

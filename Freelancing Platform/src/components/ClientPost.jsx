@@ -1,8 +1,8 @@
 import { useState } from "react";
-import SkillSelector from "../components/SkillSelector";
+import SkillSelector from "./SkillSelector";
 import "../index.css";
 
-function EmpPost() {
+function ClientPost() {
   const [outputSkillsArray, setOutputSkillsArray] = useState([]);
   const [skillArray, setSkillArray] = useState([
     "JavaScript",
@@ -178,15 +178,15 @@ function EmpPost() {
               </div>
             </div>
             <div>
-              <label className="text-xl mr-9  font-semibold ">
-                Email:
-              </label>
-                <input type="email" className="border w-full p-2 mt-2" />
+              <label className="text-xl mr-9  font-semibold ">Email:</label>
+              <input type="email" className="border w-full p-2 mt-2" />
             </div>
 
             <div>
               <label className=" mr-9">
-              <p className="text-xl mb-2 font-semibold">Estimate the Scope of Your Work</p>
+                <p className="text-xl mb-2 font-semibold">
+                  Estimate the Scope of Your Work
+                </p>
                 <div className="radio-group">
                   <input type="radio" name="scope" value="large" />
                   <label htmlFor="large">Large</label>
@@ -295,4 +295,4 @@ function EmpPost() {
   );
 }
 
-export default EmpPost;
+export default ClientPost;

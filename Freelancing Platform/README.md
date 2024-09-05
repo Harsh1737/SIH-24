@@ -1,8 +1,11 @@
-# React + Vite
+# Description about Project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is a freelancing platform where freelancers can register and create their profile. They can also apply for the projects posted by the clients. Clients can post their projects and can hire freelancers. They can also see the proposals submitted by the freelancers and can accept or reject them.
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+# Features
+1. Freelancer can register and create their profile.
+2. Freelancer can apply for the projects posted by the clients.
+3. Client can register and post their projects.
+4. Client can see the proposals submitted by the freelancers and can accept or reject them.
+5. Client can hire the freelancer.
+6. Client can see the profile of the freelancer.

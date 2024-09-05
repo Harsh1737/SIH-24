@@ -1,5 +1,7 @@
 import "../index.css";
 import { Link } from "react-router-dom";
+import '../index.css';
+
 function Navbar() {
   return (
     <div id="hero">
@@ -44,8 +46,8 @@ function Navbar() {
               <a href="#">About</a>
             </li>
 
-            <Link to="/emp-login" >
-              <button className=" mt-4 h-10 w-24 px-4 py-2 bg-blue-400 text-white font-semibold rounded-lg shadow-md hover:bg-blue-600 transition-colors duration-300">
+            <Link to="/login" >
+              <button className="h-10 w-24 px-4 py-2 bg-blue-400 text-white font-semibold rounded-lg shadow-md hover:bg-blue-600 transition-colors duration-300">
                 Login
               </button>
             </Link>

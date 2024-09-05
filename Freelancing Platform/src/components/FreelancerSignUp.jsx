@@ -1,14 +1,15 @@
-import React from 'react';
-import SignUpForm from '../src/SignUp.jsx';
+
+import SignUp from "./SignUp";
+import "../index.css";
 
 const FreelancerSignUp = () => {
   return (
-    <SignUpForm
-    work="Here to hire talent?"
-      talent="Join as a Client"
-      title="Sign up to find work you love"
-      emailLabel="Email"
-      checkboxLabel="Send me emails with tips on how to find work that fits my needs."
+    <SignUp
+      work="Looking for work?"
+      talent="Apply as talent"
+      title="Sign up to hire talent"
+      emailLabel="Work email address"
+      checkboxLabel="Send me emails with tips on how to find talent that fits my needs."
       buttonLabel="Create my account"
       linkText="Already have an account?"
       linkHref="#"

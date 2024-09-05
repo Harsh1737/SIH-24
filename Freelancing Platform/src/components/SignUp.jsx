@@ -1,11 +1,10 @@
 
 import React, { useState } from 'react';
+import '../index.css';
 
-const SignUpForm = () => {
-  // State to determine user type
-  const [userType, setUserType] = useState('employer'); // 'employer' or 'freelancer'
+const SignUp = () => {
+  const [userType, setUserType] = useState('employer');
 
-  // State for dynamic content
   const [work, setWork] = useState(userType === 'employer' ? 'Looking for Work?' : 'Here to hire?');
   const [talent, setTalent] = useState(userType === 'employer' ? 'Apply as talent' : 'Join as Client');
   const [title, setTitle] = useState(userType === 'employer' ? 'Sign up to hire talent' : 'Sign up to find work');
@@ -167,4 +166,4 @@ const SignUpForm = () => {
   );
 };
 
-export default SignUpForm;
+export default SignUp;
