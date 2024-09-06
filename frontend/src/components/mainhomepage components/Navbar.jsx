@@ -56,7 +56,7 @@ function Navbar() {
             {/* Navbar Content (Logo, Links, Post Button) */}
             <nav className="flex flex-col md:flex-row items-center md:gap-12 gap-8">
               <a href="/" className="md:hidden block">
-                <img src="images/logo-l5.svg" alt="Logo" className="h-12" />
+                <img src="images/logo-l5.svg" alt="XXX" className="h-12" />
               </a>
 
               <ul className="list-none p-0 m-0 flex flex-col md:flex-row gap-8 md:gap-12 items-center">
@@ -80,7 +80,7 @@ function Navbar() {
                     <li>
                       <a
                         href="#"
-                        className="no-underline py-6 flex justify-between items-center p-4 min-w-[15rem] rounded-md text-black"
+                        className="no-underline py-6 flex justify-between items-center p-4 min-w-[15rem] rounded-md text-black hover:bg-black hover:text-white"
                       >
                         Logo Design
                       </a>
@@ -88,7 +88,7 @@ function Navbar() {
                     <li>
                       <a
                         href="#"
-                        className="no-underline py-6 flex justify-between items-center p-4 min-w-[15rem] rounded-md text-black"
+                        className="no-underline py-6 flex justify-between items-center p-4 min-w-[15rem] rounded-md text-black hover:bg-black hover:text-white"
                       >
                         Web Development
                       </a>
@@ -96,7 +96,7 @@ function Navbar() {
                     <li>
                       <a
                         href="#"
-                        className="no-underline py-6 flex justify-between items-center p-4 min-w-[15rem] rounded-md text-black"
+                        className="no-underline py-6 flex justify-between items-center p-4 min-w-[15rem] rounded-md text-black hover:bg-black hover:text-white"
                       >
                         Photography
                       </a>
@@ -104,7 +104,7 @@ function Navbar() {
                     <li>
                       <a
                         href="#"
-                        className="no-underline py-6 flex justify-between items-center p-4 min-w-[15rem] rounded-md text-black"
+                        className="no-underline py-6 flex justify-between items-center p-4 min-w-[15rem] rounded-md text-black hover:bg-black hover:text-white"
                       >
                         Content Creator
                       </a>
@@ -112,7 +112,7 @@ function Navbar() {
                     <li>
                       <a
                         href="#"
-                        className="no-underline py-6 flex justify-between items-center p-4 min-w-[15rem] rounded-md text-black"
+                        className="no-underline py-6 flex justify-between items-center p-4 min-w-[15rem] rounded-md text-black hover:bg-black hover:text-white"
                       >
                         Video and Animation
                       </a>

@@ -17,34 +17,33 @@ const ClientPostUsingAI = () => {
     };
   }, []);
 
-  // const [noOfChars, setNoOfChars] = useState(150);
   return (
     <>
-      <div className="flex flex-col h-screen w-full justify-center items-center">
-        <div className="h-screen flex flex-col flex-wrap gap-10 justify-center items-center w-2/3">
-          <div className="flex flex-col flex-wrap gap-10">
-            <div>
-              <h1 className="font-semibold tracking-wide text-wrap text-6xl text-center leading-tight mb-2">
-                Describe what you are looking for in a sentence or two.
-              </h1>
-            </div>
-            <input
-              type="text"
-              className="border-black border-4 rounded-3xl w-full py-5 px-10 relative"
-              placeholder="Eg. I need someone to help me build a Shopify website for my office furniture business. "
-            />
-            <p className="opacity-50  flex justify-end">150 characters left</p>
-          </div>
+      <div className="flex flex-col h-screen w-full justify-center items-center px-4 sm:px-8 md:px-16 lg:px-20">
+        <div className="flex flex-col w-full max-w-5xl gap-6 lg:gap-10 mb-8">
+          <h1 className="font-semibold tracking-wide text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-center leading-tight mb-4">
+            Describe what you are looking for in a sentence or two.
+          </h1>
+          <input
+            type="text"
+            className="border-black border-2 sm:border-3 rounded-3xl w-full py-3 sm:py-5 px-4 sm:px-8 md:px-10 relative text-lg"
+            placeholder="Eg. I need someone to help me build a Shopify website for my office furniture business."
+          />
+          <p className="opacity-50 text-sm sm:text-base text-right">
+            150 characters left
+          </p>
         </div>
-        <div className="flex flex-wrap justify-between py-5 px-16 w-full">
-          <Link to="/emp-login">
-            <button className="text-green-500 bg-slate-200 font-semibold text-2xl border-2 border-gray-400 bg-transparent rounded-xl px-9 py-3">
+        <div className="flex flex-col sm:flex-row justify-between  gap-4 w-full max-w-2xl">
+          <Link to="/client-homepage" className="flex-1 sm:flex-none">
+            <button className="w-full sm:w-auto bg-slate-200 text-green-500 font-semibold text-lg sm:text-xl border-2 border-gray-400 rounded-xl px-4 sm:px-6 py-2 sm:py-3">
               Back
             </button>
           </Link>
-          <button className="text-black bg-slate-200 font-semibold text-2xl border-2 border-gray-400 bg-transparent rounded-xl px-9 py-3">
-            Continue
-          </button>
+          <Link to="/next-page" className="flex-1 sm:flex-none">
+            <button className="w-full sm:w-auto bg-slate-200 text-black font-semibold text-lg sm:text-xl border-2 border-gray-400 rounded-xl px-4 sm:px-6 py-2 sm:py-3">
+              Continue
+            </button>
+          </Link>
         </div>
       </div>
     </>
