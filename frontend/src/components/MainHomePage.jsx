@@ -1,6 +1,6 @@
-import Home from "./Home";
-import Navbar from "./Navbar";
-import Footer from "./Footer";
+import Home from "./mainhomepage components/Home"
+import Navbar from "./mainhomepage components/Navbar";
+import Footer from "./mainhomepage components/Footer";
 import '../index.css';
 
 const MainHomePage = () => {

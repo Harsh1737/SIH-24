@@ -1,29 +1,29 @@
-import image from "../assets/jobs.png";
-import image1 from "../assets/image1.jpg";
-import image2 from "../assets/image2.png";
-import image3 from "../assets/image3.jpg";
-import image4 from "../assets/image4.jpg";
-import image5 from "../assets/image5.jpg";
-import image6 from "../assets/image6.png";
-import image7 from "../assets/image7.png";
-import image8 from "../assets/image8.png";
-import image9 from "../assets/image9.png";
-import image10 from "../assets/image10.png";
-import image11 from "../assets/image11.png";
-import image12 from "../assets/image12.png";
-import image13 from "../assets/image13.png";
-import image14 from "../assets/image14.png";
-import image15 from "../assets/image15.png";
-import image16 from "../assets/image16.png";
-import image17 from "../assets/image17.png";
-import image18 from "../assets/image18.png";
-import image19 from "../assets/image19.png";
-import image20 from "../assets/image21.png";
-import image21 from "../assets/im.jpg";
+import image from "../../assets/jobs.png";
+import image1 from "../../assets/image1.jpg";
+import image2 from "../../assets/image2.png";
+import image3 from "../../assets/image3.jpg";
+import image4 from "../../assets/image4.jpg";
+import image5 from "../../assets/image5.jpg";
+import image6 from "../../assets/image6.png";
+import image7 from "../../assets/image7.png";
+import image8 from "../../assets/image8.png";
+import image9 from "../../assets/image9.png";
+import image10 from "../../assets/image10.png";
+import image11 from "../../assets/image11.png";
+import image12 from "../../assets/image12.png";
+import image13 from "../../assets/image13.png";
+import image14 from "../../assets/image14.png";
+import image15 from "../../assets/image15.png";
+import image16 from "../../assets/image16.png";
+import image17 from "../../assets/image17.png";
+import image18 from "../../assets/image18.png";
+import image19 from "../../assets/image19.png";
+import image20 from "../../assets/image21.png";
+import image21 from "../../assets/im.jpg";
 
 import { Link } from "react-router-dom";
 
-import '../index.css'
+import "../../index.css";
 
 const images = [
   image1,
@@ -51,14 +51,14 @@ const images = [
 function Home() {
   return (
     <>
-      <div className="flex flex-row items-start">
+      <div className="flex flex-col md:flex-row items-start ">
         <div
-          className="w-1/2 h-[400px] bg-center bg-cover bg-no-repeat"
+          className="w-full md:w-1/2 h-[300px] md:h-[400px] bg-center bg-cover bg-no-repeat"
           style={{ backgroundImage: `url(${image21})` }}
         ></div>
 
-        <div className="w-1/2 p-8">
-          <h1 className="font-serif text-5xl text-gray-600 mt-8 text-shadow-lg">
+        <div className="w-full md:w-1/2 p-8">
+          <h1 className="font-serif text-4xl md:text-5xl text-gray-600 mt-4 md:mt-8 text-shadow-lg">
             Freelancer HomePage
           </h1>
           <p className="mt-4 text-gray-700">
@@ -66,9 +66,9 @@ function Home() {
             facilis velit dolores provident earum distinctio hic non repellat,
             voluptatem itaque.
           </p>
-          <div className="mt-8 flex justify-end">
+          <div className="mt-6 md:mt-8 flex justify-center md:justify-end">
             <Link to="pre-signup">
-              <button className="bg-blue-400 text-white font-semibold mr-6 py-1 px-4 rounded-lg shadow-md hover:bg-blue-600 transition-colors duration-300">
+              <button className="bg-blue-400 text-white font-semibold py-2 px-4 rounded-lg shadow-md hover:bg-blue-600 transition-colors duration-300">
                 Create Account
               </button>
             </Link>
@@ -76,8 +76,8 @@ function Home() {
         </div>
       </div>
 
-      <div className="flex flex-wrap gap-4 m-4 justify-around">
-        <div className="w-32 h-24 border-solid border-2 border-gray-500  relative rounded-xl shadow-2xl bg-slate-100 mt-14  p-2">
+      <div className="flex flex-wrap gap-4 justify-around m-4">
+        <div className="w-40 h-28 border-solid border-2 border-gray-500 relative rounded-xl shadow-2xl bg-slate-100 mt-14 p-2">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="30"
@@ -91,7 +91,7 @@ function Home() {
           </svg>
           <h3 className="mt-2">Photography</h3>
         </div>
-        <div className="w-32 h-24 border-solid border-2 border-gray-500  relative rounded-xl shadow-2xl bg-slate-100 mt-14  p-2">
+        <div className="w-40 h-28 border-solid border-2 border-gray-500  relative rounded-xl shadow-2xl bg-slate-100 mt-14  p-2">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="30"
@@ -104,7 +104,7 @@ function Home() {
           </svg>
           <h3 className="mt-2">Photography</h3>
         </div>
-        <div className="w-32 h-24 border-solid border-2 border-gray-500  relative rounded-xl shadow-2xl bg-slate-100 mt-14  p-2">
+        <div className="w-40 h-28 border-solid border-2 border-gray-500  relative rounded-xl shadow-2xl bg-slate-100 mt-14  p-2">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="30"
@@ -117,7 +117,7 @@ function Home() {
           </svg>
           <h3 className="mt-2">Photography</h3>
         </div>
-        <div className="w-32 h-24 border-solid border-2 border-gray-500  relative rounded-xl shadow-2xl bg-slate-100 mt-14  p-2">
+        <div className="w-40 h-28 border-solid border-2 border-gray-500  relative rounded-xl shadow-2xl bg-slate-100 mt-14  p-2">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="30"
@@ -130,7 +130,7 @@ function Home() {
           </svg>
           <h3 className="mt-2">Photography</h3>
         </div>
-        <div className="w-32 h-24 border-solid border-2 border-gray-500  relative rounded-xl shadow-2xl bg-slate-100 mt-14  p-2">
+        <div className="w-40 h-28 border-solid border-2 border-gray-500  relative rounded-xl shadow-2xl bg-slate-100 mt-14  p-2">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             x="0px"
@@ -143,7 +143,7 @@ function Home() {
           </svg>
           <h3 className="mt-2">Photography</h3>
         </div>
-        <div className="w-32 h-24 border-solid border-2 border-gray-500  relative rounded-xl shadow-2xl bg-slate-100 mt-14  p-2">
+        <div className="w-40 h-28 border-solid border-2 border-gray-500  relative rounded-xl shadow-2xl bg-slate-100 mt-14  p-2">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             x="0px"
@@ -156,8 +156,8 @@ function Home() {
           </svg>
           <h3 className="mt-2">Photography</h3>
         </div>
-        <div className="w-32 h-24 border-solid border-2 border-gray-500  relative rounded-xl shadow-2xl bg-slate-100 mt-14  p-2"></div>
-        <div className="w-32 h-24 border-solid border-2 border-gray-500  relative rounded-xl shadow-2xl bg-slate-100 mt-14  p-2"></div>
+        <div className="w-40 h-28 border-solid border-2 border-gray-500  relative rounded-xl shadow-2xl bg-slate-100 mt-14  p-2"></div>
+        <div className="w-40 h-28 border-solid border-2 border-gray-500  relative rounded-xl shadow-2xl bg-slate-100 mt-14  p-2"></div>
       </div>
 
       <div>
@@ -167,16 +167,14 @@ function Home() {
           style={{ width: "100%", height: "auto" }}
         />
       </div>
-      <div>
-        <h2 className="font-sans font-bold text-5xl mx-14 transition-transform duration-300 hover:animate-bounce">
+      <div className=" mx-4 sm:mx-8 md:mx-12 lg:mx-14 mb-8">
+        <h2 className="font-sans font-bold text-3xl sm:text-4xl md:text-5xl lg:text-6xl transition-transform duration-300 hover:animate-bounce">
           What you can get here?
         </h2>
       </div>
-      <div className="container mx-auto flex flex-wrap gap-1 justify-start ">
-        {" "}
 
-        <div className="column w-[282px] p-1 flex flex-col gap-1 mt-10">
-          {" "}
+      <div className="container mx-auto flex flex-wrap lg-md:5 md:gap-3 gap-1 justify-center ">
+        <div className="w-[282px] p-1 flex flex-col gap-1 mt-10">
           <img
             src={images[0]}
             alt="Image 1"
