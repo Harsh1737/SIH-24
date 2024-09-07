@@ -1,6 +1,5 @@
 
-import React from 'react'
-const pst=123;
+const post=123;
 import '../index.css'
 
 const ClientInfo = () => {
@@ -83,7 +82,7 @@ const ClientInfo = () => {
             
         </div>
         <div className=' ml-20 mt-10 '>
-            <div className='font-bold text-2xl'>Post : {pst}</div>
+            <div className='font-bold text-2xl'>Post : {post}</div>
             
             {/* <div className='mt-3'>123</div> */}
 

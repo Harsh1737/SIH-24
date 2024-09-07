@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import img from "../assets/rating.png";
 import '../index.css'
 

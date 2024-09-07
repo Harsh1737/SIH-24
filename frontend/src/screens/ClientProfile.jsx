@@ -1,6 +1,6 @@
-import React from "react";
-import ClientHeader from "./ClientHeader"
-import ClientInfo from "./ClientInfo"
+import components from "../components";
+
+const { ClientHeader, ClientInfo } = components;
 import "../index.css";
 
 const ClientProfile = () => {

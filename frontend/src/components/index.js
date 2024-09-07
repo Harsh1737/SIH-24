@@ -1,32 +1,26 @@
-import ClientHome from "./ClientHome";
-import ClientPost from "./ClientPost";
-import ClientPostUsingAI from "./ClientPostUsingAI";
-import ClientProfile from "./ClientProfile";
-import ClientProfileEdit from "./ClientProfileEdit";
+// Export an object with all components
+import ClientHeader from "./ClientHeader";
+import ClientInfo from "./ClientInfo";
 import ClientSignUp from "./ClientSignUp";
-
-import FreelancerHome from "./FreelancerHome";
-import FreelancerProfile from "./FreelancerProfile";
-import FreelancerProfileEdit from "./FreelancerProfileEdit";
+import Footer from "./Footer";
+import FreelancerHeader from "./FreelancerHeader";
+import FreelancerInfo from "./FreelancerInfo";
 import FreelancerSignUp from "./FreelancerSignUp";
+import Home from "./Home";
+import Navbar from "./Navbar";
+import SkillSelector from "./SkillSelector";
 
-import Login from "./Login";
-import PreSignup from "./PreSignup";
-
-import MainHomePage from "./MainHomePage";
-
-export {
-  ClientHome,
-  ClientPost,
-  ClientPostUsingAI,
-  ClientProfile,
-  ClientProfileEdit,
+const components = {
+  ClientHeader,
+  ClientInfo,
   ClientSignUp,
-  FreelancerHome,
-  FreelancerProfile,
-  FreelancerProfileEdit,
+  Footer,
+  FreelancerHeader,
+  FreelancerInfo,
   FreelancerSignUp,
-  Login,
-  PreSignup,
-  MainHomePage,
+  Home,
+  Navbar,
+  SkillSelector,
 };
+
+export default components;

@@ -7,22 +7,25 @@ import {
   RouterProvider,
 } from "react-router-dom";
 
-import {
+import screens from "./screens";
+import components from "./components";
+
+const { ClientSignUp, FreelancerSignUp } = components;
+const {
   ClientHome,
   ClientPost,
   ClientPostUsingAI,
   ClientProfile,
   ClientProfileEdit,
-  ClientSignUp,
   FreelancerHome,
   FreelancerProfile,
   FreelancerProfileEdit,
-  FreelancerSignUp,
   Login,
-  PreSignup,
   MainHomePage,
-} from "./components/index.js";
+  PreSignup,
+} = screens;
 
+// Create a router instance with routes
 const router = createBrowserRouter(
   createRoutesFromElements(
     <>
@@ -35,18 +38,21 @@ const router = createBrowserRouter(
 
       <Route path="/freelancer-homepage" element={<FreelancerHome />} />
       <Route path="/freelancer-profile" element={<FreelancerProfile />} />
-      <Route path="/freelancer-profile-editpage" element={<FreelancerProfileEdit />} />
+      <Route
+        path="/freelancer-profile-editpage"
+        element={<FreelancerProfileEdit />}
+      />
 
       <Route path="/client-homepage" element={<ClientHome />} />
       <Route path="/create-post" element={<ClientPost />} />
       <Route path="/create-postusingai" element={<ClientPostUsingAI />} />
       <Route path="/client-profile" element={<ClientProfile />} />
       <Route path="/client-profile-editpage" element={<ClientProfileEdit />} />
-
     </>
   )
 );
 
+// Render the app with StrictMode and RouterProvider
 createRoot(document.getElementById("root")).render(
   <StrictMode>
     <RouterProvider router={router} />

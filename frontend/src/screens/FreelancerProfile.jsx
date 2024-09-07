@@ -1,6 +1,6 @@
-import React from 'react'
-import FreelancerHeader from './FreelancerHeader'
-import FreelancerInfo from './FreelancerInfo'
+import components from "../components";
+
+const { FreelancerHeader, FreelancerInfo } = components;
 
 import '../index.css'
 

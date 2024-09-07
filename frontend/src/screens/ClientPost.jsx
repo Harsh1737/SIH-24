@@ -1,5 +1,7 @@
 import { useState } from "react";
-import SkillSelector from "./SkillSelector";
+import components from "../components";
+
+const { SkillSelector } = components;
 import "../index.css";
 
 function ClientPost() {

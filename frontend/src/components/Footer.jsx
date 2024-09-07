@@ -1,6 +1,6 @@
-import playStore from "../../assets/play-store.png";
-import appStore from "../../assets/app-store.png";
-import "../../index.css";
+import playStore from "../assets/play-store.png";
+import appStore from "../assets/app-store.png";
+import "../index.css";
 
 function Footer() {
   return (

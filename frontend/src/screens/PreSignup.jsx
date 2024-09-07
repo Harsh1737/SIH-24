@@ -13,7 +13,6 @@ const PreSignup = () => {
           <img src="../assets/image2.png" alt="X" className="h-8 md:h-12" />
         </Link>
       </div>
-
       <div className="flex flex-col gap-10 justify-center items-center h-full w-full my-12 px-4 sm:px-16">
         <div>
           <h1 className="text-xl sm:text-2xl md:text-3xl font-bold text-center uppercase leading-tight max-w-3xl">

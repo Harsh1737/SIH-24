@@ -1,29 +1,29 @@
-import image from "../../assets/jobs.png";
-import image1 from "../../assets/image1.jpg";
-import image2 from "../../assets/image2.png";
-import image3 from "../../assets/image3.jpg";
-import image4 from "../../assets/image4.jpg";
-import image5 from "../../assets/image5.jpg";
-import image6 from "../../assets/image6.png";
-import image7 from "../../assets/image7.png";
-import image8 from "../../assets/image8.png";
-import image9 from "../../assets/image9.png";
-import image10 from "../../assets/image10.png";
-import image11 from "../../assets/image11.png";
-import image12 from "../../assets/image12.png";
-import image13 from "../../assets/image13.png";
-import image14 from "../../assets/image14.png";
-import image15 from "../../assets/image15.png";
-import image16 from "../../assets/image16.png";
-import image17 from "../../assets/image17.png";
-import image18 from "../../assets/image18.png";
-import image19 from "../../assets/image19.png";
-import image20 from "../../assets/image21.png";
-import image21 from "../../assets/im.jpg";
+import image from "../assets/jobs.png";
+import image1 from "../assets/image1.jpg";
+import image2 from "../assets/image2.png";
+import image3 from "../assets/image3.jpg";
+import image4 from "../assets/image4.jpg";
+import image5 from "../assets/image5.jpg";
+import image6 from "../assets/image6.png";
+import image7 from "../assets/image7.png";
+import image8 from "../assets/image8.png";
+import image9 from "../assets/image9.png";
+import image10 from "../assets/image10.png";
+import image11 from "../assets/image11.png";
+import image12 from "../assets/image12.png";
+import image13 from "../assets/image13.png";
+import image14 from "../assets/image14.png";
+import image15 from "../assets/image15.png";
+import image16 from "../assets/image16.png";
+import image17 from "../assets/image17.png";
+import image18 from "../assets/image18.png";
+import image19 from "../assets/image19.png";
+import image20 from "../assets/image21.png";
+import image21 from "../assets/im.jpg";
 
 import { Link } from "react-router-dom";
 
-import "../../index.css";
+import "../index.css";
 
 const images = [
   image1,
@@ -75,7 +75,6 @@ function Home() {
           </div>
         </div>
       </div>
-
       <div className="flex flex-wrap gap-4 justify-around m-4">
         <div className="w-40 h-28 border-solid border-2 border-gray-500 relative rounded-xl shadow-2xl bg-slate-100 mt-14 p-2">
           <svg
@@ -159,20 +158,63 @@ function Home() {
         <div className="w-40 h-28 border-solid border-2 border-gray-500  relative rounded-xl shadow-2xl bg-slate-100 mt-14  p-2"></div>
         <div className="w-40 h-28 border-solid border-2 border-gray-500  relative rounded-xl shadow-2xl bg-slate-100 mt-14  p-2"></div>
       </div>
-
-      <div>
+      {/* <div>
         <img
           src={image}
           alt="Example"
           style={{ width: "100%", height: "auto" }}
         />
+      </div> */}
+
+      <div className="flex flex-col lg:flex-row justify-between items-center bg-blue-50 rounded-lg p-16 shadow-2xl w-11/12 lg:w-9/12 mx-auto my-28">
+        <div className="bg-white p-6 rounded-lg shadow-md mb-4 lg:mb-0 lg:mr-4 flex-grow">
+          <p className="text-lg font-semibold mb-4 flex items-center">
+            More than 50 Lakh Indians trust Job Hai{" "}
+            <span className="ml-2">🤝</span>
+          </p>
+          <Link to="/pre-signup">
+            <button className="bg-teal-600 text-white px-4 py-2 rounded-full font-semibold">
+              Register Now
+            </button>
+          </Link>
+        </div>
+
+        <div className="flex space-x-4 lg:space-x-8">
+          <div className="flex flex-col items-center">
+            <img
+              src="https://img.icons8.com/color/48/000000/approval.png"
+              alt="Verified Jobs"
+            />
+            <p className="text-center text-sm mt-2">
+              100% FREE & Verified Jobs
+            </p>
+          </div>
+          <div className="flex flex-col items-center">
+            <img
+              src="https://img.icons8.com/color/48/000000/place-marker.png"
+              alt="Best jobs in locality"
+            />
+            <p className="text-center text-sm mt-2">
+              Best jobs in your locality
+            </p>
+          </div>
+          <div className="flex flex-col items-center">
+            <img
+              src="https://img.icons8.com/color/48/000000/phone-office.png"
+              alt="Direct calls with HR"
+            />
+            <p className="text-center text-sm mt-2">
+              Direct calls with HR for interview
+            </p>
+          </div>
+        </div>
       </div>
+
       <div className=" mx-4 sm:mx-8 md:mx-12 lg:mx-14 mb-8">
         <h2 className="font-sans font-bold text-3xl sm:text-4xl md:text-5xl lg:text-6xl transition-transform duration-300 hover:animate-bounce">
           What you can get here?
         </h2>
       </div>
-
       <div className="container mx-auto flex flex-wrap lg-md:5 md:gap-3 gap-1 justify-center ">
         <div className="w-[282px] p-1 flex flex-col gap-1 mt-10">
           <img
