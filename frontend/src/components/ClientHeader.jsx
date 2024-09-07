@@ -1,6 +1,8 @@
-import React from 'react';
-import svg from '../assets/svg.jpg'
+
+import images from '../assets'
 import '../index.css'
+
+const { svg } = images
 
 function ClientHeader() {
   return (
