@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
-import backgroundImage from "../assets/bg.svg";
+import images from '../assets'
+const { bg : backgroundImage } = images
 import "../index.css";
 
 const ClientPostUsingAI = () => {
