@@ -1,5 +1,6 @@
 import { useState } from "react";
-import img from "../assets/rating.png";
+import images from '../assets'
+const { rating } = images
 import '../index.css'
 
 function FreelancerInfo() {
@@ -52,7 +53,7 @@ function FreelancerInfo() {
           </div>
           <h5 className="text-lg text-gray-500">Product Designer</h5>
           <div className="flex gap-1">
-            <img className="h-10 w-30" src={img} alt="" />
+            <img className="h-10 w-30" src={ rating } alt="" />
           </div>
           <p>
             I am a results-driven freelance product designer with a proven track

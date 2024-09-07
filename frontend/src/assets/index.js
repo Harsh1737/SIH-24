@@ -1,4 +1,4 @@
-import appstore from "./app-store.png";
+import appStore from "./app-store.png";
 import bg from "./bg.svg";
 import iii from "./iii.jpg";
 import im from "./im.jpg";
@@ -28,13 +28,13 @@ import jobs from "./jobs.png";
 import nav from "./nav.png";
 import navbar from "./navbar.png";
 import pencil from "./pencil.svg";
-import playstore from "./play-store.png";
+import playStore from "./play-store.png";
 import rating from "./rating.png";
 import react from "./react.svg";
 import svg from "./svg.jpg";
 
 const images = {
-  appstore,
+  appStore,
   bg,
   iii,
   im,
@@ -64,7 +64,7 @@ const images = {
   nav,
   navbar,
   pencil,
-  playstore,
+  playStore,
   rating,
   react,
   svg,

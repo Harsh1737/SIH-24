@@ -1,4 +1,5 @@
-import svg from "../assets/svg.jpg";
+import images from '../assets'
+const { svg } = images
 import '../index.css'
 
 function FreelancerHeader() {

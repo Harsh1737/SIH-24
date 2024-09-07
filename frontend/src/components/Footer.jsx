@@ -1,5 +1,6 @@
-import playStore from "../assets/play-store.png";
-import appStore from "../assets/app-store.png";
+
+import images from '../assets'
+const { playStore, appStore } = images
 import "../index.css";
 
 function Footer() {
