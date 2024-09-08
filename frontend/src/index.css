@@ -22,26 +22,6 @@ body {
   margin: 0;
 }
 
-img {
-  display: block;
-}
-
-button {
-  appearance: none;
-  border: 1px solid var(--primary-color);
-  color: var(--primary-color);
-  background-color: transparent;
-  border-radius: 10rem;
-  padding: 0.75rem 1.5rem;
-  cursor: pointer;
-  transition: background-color var(--def-transition-duration);
-}
-
-button:hover {
-  background-color: var(--primary-color);
-  color: #fff;
-}
-
 nav ul a {
   color: #a1a2a3;
   transition: color var(--def-transition-duration);

@@ -2,12 +2,12 @@
 import ClientHeader from "./ClientHeader";
 import ClientInfo from "./ClientInfo";
 import ClientSignUp from "./ClientSignUp";
-import Footer from "./Footer";
+import Footer from "./Footer/Footer";
 import FreelancerHeader from "./FreelancerHeader";
 import FreelancerInfo from "./FreelancerInfo";
 import FreelancerSignUp from "./FreelancerSignUp";
-import Home from "./Home";
-import Navbar from "./Navbar";
+import Home from "./Home/Home";
+import Navbar from "./Navbar/Navbar";
 import SkillSelector from "./SkillSelector";
 
 const components = {
