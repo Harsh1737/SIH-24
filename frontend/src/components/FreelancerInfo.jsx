@@ -1,6 +1,6 @@
 import { useState } from "react";
 import images from '../assets'
-const { rating } = images
+const { rating, iii } = images
 import '../index.css'
 
 function FreelancerInfo() {
@@ -14,7 +14,7 @@ function FreelancerInfo() {
     <div className="flex mt-3 bg-white rounded-md shadow">
       <div className="w-1/3 p-6 border-r border-gray-200">
         <img
-          src="https://t3.ftcdn.net/jpg/00/64/67/52/360_F_64675209_7ve2XQANuzuHjMZXP3aIYIpsDKEbF5dD.jpg"
+          src={iii}
           alt="Profile"
           className="mt-8 w-[300px] h-[300px] mx-auto"
         />
