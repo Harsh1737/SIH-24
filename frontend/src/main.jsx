@@ -9,6 +9,7 @@ import {
 
 import screens from "./screens";
 import components from "./components";
+import { RecoilRoot } from "recoil";
 
 const { ClientSignUp, FreelancerSignUp } = components;
 const {
@@ -55,6 +56,8 @@ const router = createBrowserRouter(
 // Render the app with StrictMode and RouterProvider
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <RouterProvider router={router} />
+    <RecoilRoot>
+      <RouterProvider router={router} />
+    </RecoilRoot>
   </StrictMode>
 );

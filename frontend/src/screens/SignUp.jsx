@@ -1,6 +1,5 @@
 /* eslint-disable no-unused-vars */
 import React, { useState, useRef } from "react";
-import "../index.css";
 
 const SignUp = () => {
   const [userType, setUserType] = useState("employer");

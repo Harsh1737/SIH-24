@@ -9,6 +9,8 @@ import FreelancerSignUp from "./FreelancerSignUp";
 import Home from "./Home/Home";
 import Navbar from "./Navbar/Navbar";
 import SkillSelector from "./SkillSelector";
+import Button from "./Button";
+import PreSignupButton from "./PreSignupButton";
 
 const components = {
   ClientHeader,
@@ -21,6 +23,8 @@ const components = {
   Home,
   Navbar,
   SkillSelector,
+  Button,
+  PreSignupButton,
 };
 
 export default components;
