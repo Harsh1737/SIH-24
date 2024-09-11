@@ -1,9 +1,10 @@
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import "../index.css";
+import Button from "../components/Button";
 
 const PreSignup = () => {
-  const [text, setText] = useState("CREATE ACCOUNT");
+  const [btnText, setbtnText] = useState("CREATE ACCOUNT");
   const [role, setRole] = useState("");
 
   return (
@@ -24,7 +25,7 @@ const PreSignup = () => {
           <button
             onClick={() => {
               setRole("freelancer");
-              setText("Sign up as a freelancer");
+              setbtnText("Sign up as freelancer");
             }}
             className={`border-2 sm:border-3 shadow-lg p-4 sm:p-6 h-auto w-full sm:w-[300px] rounded-xl transition-transform duration-300 ease-in-out
             ${
@@ -43,7 +44,7 @@ const PreSignup = () => {
           <button
             onClick={() => {
               setRole("client");
-              setText("Join as a client");
+              setbtnText("Join as a client");
             }}
             className={`border-2 sm:border-3 shadow-lg p-4 sm:p-6 h-auto w-full sm:w-[300px] rounded-xl transition-transform duration-300 ease-in-out
             ${
@@ -62,20 +63,25 @@ const PreSignup = () => {
         </div>
 
         <div className="flex flex-col gap-3 justify-center items-center">
-          {role === "freelancer" ? (
-            <Link to="/freelancer-signup">
-              <button className="bg-green-700 text-white font-bold px-4 sm:px-5 py-3 sm:py-5 m-3 sm:m-5 rounded-2xl">
-                {text}
-              </button>
-            </Link>
+          {(role === "freelancer") ? (
+            <Button
+              to="/freelancer-signup"
+              className="bg-green-700 hover:bg-green-600 text-white font-bold px-4 sm:px-5 py-3 sm:py-5 m-3 sm:m-5 rounded-xl"
+            >
+              {btnText}
+            </Button>
+          ) : (role === "client") ? (
+            <Button
+              to="/client-signup"
+              className="bg-green-700 hover:bg-green-600 text-white font-bold px-4 sm:px-5 py-3 sm:py-5 m-3 sm:m-5 rounded-xl"
+            >
+              {btnText}
+            </Button>
           ) : (
-            <Link to="/client-signup">
-              <button className="bg-green-700 text-white font-bold px-4 sm:px-5 py-3 sm:py-5 m-3 sm:m-5 rounded-2xl">
-                {text}
-              </button>
-            </Link>
+            <button className="bg-gray-300 text-gray-500 border border-gray-500 font-bold px-4 sm:px-5 py-3 sm:py-5 m-3 sm:m-5 rounded-xl">
+              CHOOSE ONE
+            </button>
           )}
-
           <div className="flex flex-col gap-1 justify-center items-center">
             <div>Already have an account? </div>
             <Link to="/login">
