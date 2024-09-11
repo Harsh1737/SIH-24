@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import components from "../components";
-const { Button, PreSignupButton } = components;
+const { Button, PreSignUpButton } = components;
 
 const PreSignup = () => {
   const [btnText, setBtnText] = useState("CREATE ACCOUNT");
@@ -22,7 +22,7 @@ const PreSignup = () => {
         </div>
 
         <div className="flex flex-col sm:flex-row gap-6 sm:gap-12 font-bold text-lg sm:text-xl">
-        <PreSignupButton
+        <PreSignUpButton
         role="freelancer"
         setRole={setRole}
         setBtnText={setBtnText}
@@ -32,7 +32,7 @@ const PreSignup = () => {
         currentRole={role}
         borderColor="border-green-500"
       />
-      <PreSignupButton 
+      <PreSignUpButton 
         role="client"
         setRole={setRole}
         setBtnText={setBtnText}

@@ -10,7 +10,7 @@ import Home from "./Home/Home";
 import Navbar from "./Navbar/Navbar";
 import SkillSelector from "./SkillSelector";
 import Button from "./Button";
-import PreSignupButton from "./PreSignupButton";
+import PreSignUpButton from "./PreSignUpButton";
 
 const components = {
   ClientHeader,
@@ -24,7 +24,7 @@ const components = {
   Navbar,
   SkillSelector,
   Button,
-  PreSignupButton,
+  PreSignUpButton,
 };
 
 export default components;
