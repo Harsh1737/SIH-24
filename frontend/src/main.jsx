@@ -11,7 +11,6 @@ import screens from "./screens";
 import components from "./components";
 import { RecoilRoot } from "recoil";
 
-const { ClientSignUp, FreelancerSignUp } = components;
 const {
   ClientHome,
   ClientPost,
@@ -24,6 +23,7 @@ const {
   Login,
   MainHomePage,
   PreSignup,
+  SignUp,
 } = screens;
 
 // Create a router instance with routes
@@ -32,8 +32,8 @@ const router = createBrowserRouter(
     <>
       <Route path="/" element={<MainHomePage />} />
 
-      <Route path="/client-signup" element={<ClientSignUp />} />
-      <Route path="/freelancer-signup" element={<FreelancerSignUp />} />
+      <Route path="/client-signup" element={<SignUp />} />
+      <Route path="/freelancer-signup" element={<SignUp />} />
       <Route path="/pre-signup" element={<PreSignup />} />
       <Route path="/login" element={<Login />} />
 
