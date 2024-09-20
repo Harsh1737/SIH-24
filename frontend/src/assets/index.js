@@ -27,7 +27,7 @@ import img from "./img.jpg";
 import jobs from "./jobs.png";
 import nav from "./nav.png";
 import navbar from "./navbar.png";
-import pencil from "./pencil.svg";
+import pencil from "./Pencil.svg";
 import playStore from "./play-store.png";
 import rating from "./rating.png";
 import react from "./react.svg";
