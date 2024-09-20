@@ -32,6 +32,7 @@ import playStore from "./play-store.png";
 import rating from "./rating.png";
 import react from "./react.svg";
 import svg from "./svg.jpg";
+import Logo from "./Logo.jpg";
 
 const images = {
   appStore,
@@ -68,6 +69,7 @@ const images = {
   rating,
   react,
   svg,
+  Logo,
 };
 
 export default images;

@@ -1,17 +1,20 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import components from "../components";
+import assets from "../assets";
+import { useRecoilState } from "recoil";
+import { roleAtom } from "../store/roleAtom";
 const { Button, PreSignUpButton } = components;
-
+const { Logo } = assets;
 const PreSignup = () => {
   const [btnText, setBtnText] = useState("CREATE ACCOUNT");
-  const [role, setRole] = useState("");
-
+  const [role, setRole] = useRecoilState(roleAtom)
+  
   return (
     <>
       <div className="flex flex-col sm:flex-row justify-between items-center gap-3 px-4 sm:px-16 my-7">
         <Link to="/">
-          <img src="../assets/image2.png" alt="X" className="h-8 md:h-12" />
+          <img src={Logo} alt="X" className="h-8 md:h-12" />
         </Link>
       </div>
       <div className="flex flex-col gap-10 justify-center items-center h-full w-full my-12 px-4 sm:px-16">

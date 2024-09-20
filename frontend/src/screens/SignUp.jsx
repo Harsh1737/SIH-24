@@ -1,37 +1,23 @@
 /* eslint-disable no-unused-vars */
 import React, { useState, useRef } from "react";
+import { Link } from "react-router-dom";
+import { useRecoilValue } from "recoil";
+import { roleAtom } from "../store/roleAtom";
+import components from "../components";
+const { Logo } = components;
 
 const SignUp = () => {
-  const [userType, setUserType] = useState("employer");
+  const [role] = useRecoilValue(roleAtom);
 
-  const [work, setWork] = useState(
-    userType === "employer" ? "Looking for Work?" : "Here to hire?"
-  );
-  const [talent, setTalent] = useState(
-    userType === "employer" ? "Apply as talent" : "Join as Client"
-  );
-  const [title, setTitle] = useState(
-    userType === "employer" ? "Sign up to hire talent" : "Sign up to find work"
-  );
-  const [emailLabel, setEmailLabel] = useState(
-    userType === "employer" ? "Work email address" : "Personal email address"
-  );
-  const [checkboxLabel, setCheckboxLabel] = useState(
-    userType === "employer"
-      ? "Send me emails with tips on how to find talent that fits my needs."
-      : "Send me emails with tips on how to get the best freelancing opportunities."
-  );
-  const [buttonLabel, setButtonLabel] = useState(
-    userType === "employer" ? "Create my account" : "Create my account"
-  );
-  const [linkText, setLinkText] = useState(
-    userType === "employer"
-      ? "Already have an account?"
-      : "Already have an account?"
-  );
-  const [linkHref, setLinkHref] = useState(userType === "employer" ? "#" : "#");
-
-  const [showPassword, setShowPassword] = useState(false);
+  const [work,] = useState(role === "client" ? "Looking for Work?" : "Here to hire?");
+  const [talent, ] = useState(role === "client" ? "Apply as talent" : "Join as Client");
+  const [title, ] = useState(role === "client" ? "Sign up to hire talent" : "Sign up to find work");
+  const [emailLabel, ] = useState(role === "client" ? "Work email address" : "Personal email address");
+  const [checkboxLabel, ] = useState(role === "client"? "Send me emails with tips on how to find talent that fits my needs.": "Send me emails with tips on how to get the best freelancing opportunities.");
+  const [buttonLabel, ] = useState(role === "client" ? "Create my account" : "Create my account");
+  const [linkText, ] = useState(role === "client"? "Already have an account?": "Already have an account?");
+  const [linkHref, ] = useState(role === "client" ? "#" : "#");
+  const [showPassword, ] = useState(false);
 
   const firstNameRef = useRef();
   const lastNameRef = useRef();
@@ -50,7 +36,11 @@ const SignUp = () => {
   return (
     <>
       <div className="flex justify-between items-center p-5">
-        <div className="flex-shrink-0">logo</div>
+      <Logo
+        width="100px"
+        linkClassName="mx-auto"
+        imgClassName="w-full h-auto"
+      />
         <div className="flex space-x-4">
           <div>{work}</div>
           <div className="text-green-600 font-bold">
@@ -58,6 +48,7 @@ const SignUp = () => {
           </div>
         </div>
       </div>
+
 
       <div className="my-4 flex justify-center items-center min-h-screen px-4">
         <div className="bg-white p-8 rounded-lg shadow-md w-full max-w-md">
@@ -234,9 +225,9 @@ const SignUp = () => {
           <div className="text-center mt-6">
             <p>
               {linkText}
-              <a href={linkHref} className="text-blue-600 hover:underline">
+              <Link to="/login" className="text-blue-600 hover:underline">
                 log in
-              </a>
+              </Link>
             </p>
           </div>
         </div>

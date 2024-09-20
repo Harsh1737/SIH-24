@@ -32,8 +32,8 @@ const router = createBrowserRouter(
     <>
       <Route path="/" element={<MainHomePage />} />
 
-      <Route path="/client-signup" element={<SignUp />} />
-      <Route path="/freelancer-signup" element={<SignUp />} />
+      <Route path="/client-signup" element={<FreelancerProfile />} />
+      <Route path="/freelancer-signup" element={<FreelancerProfile />} />
       <Route path="/pre-signup" element={<PreSignup />} />
       <Route path="/login" element={<Login />} />
 

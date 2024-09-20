@@ -2,7 +2,7 @@ import { useState } from "react";
 import images from '../assets'
 const { rating, iii } = images
 import '../index.css'
-
+import Button from './Button'
 function FreelancerInfo() {
   const [isLogin, setIsLogin] = useState(true); // true for Previous Works, false for Gig Works
 
@@ -70,18 +70,18 @@ function FreelancerInfo() {
         <div className="mb-6">
           <div className="relative">
             <div className="flex mb-4 justify-start ">
-              <button
+              <Button
                 onClick={toggleView}
                 className={`py-2 ml-2 text-black  rounded-l-md font-bold font-serif`}
               >
                 Previous Works
-              </button>
-              <button
+              </Button>
+              <Button
                 onClick={toggleView}
                 className={`py-2 px-4 ml-8 text-black rounded-r-md font-bold font-serif`}
               >
                 Gig Works
-              </button>
+              </Button>
             </div>
             <div className="relative">
               <div

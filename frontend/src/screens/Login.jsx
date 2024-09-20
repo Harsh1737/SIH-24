@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-
+import components from '../components';
+const { Button } = components;
 const Login = () => {
   return (
     <div className="flex items-center justify-center min-h-screen bg-gray-100">
@@ -50,12 +51,18 @@ const Login = () => {
             </div>
           </div>
           <div>
-            <button
+            {/* <button
               type="submit"
               className="w-full px-4 py-2 text-white bg-blue-600 rounded-md hover:bg-blue-700"
             >
               Sign In
-            </button>
+            </button> */}
+            <Button 
+            to="/client-homepage"
+            className='w-full px-4 py-2 text-white bg-blue-600 rounded-md hover:bg-blue-700'
+            >
+              Sign In
+            </Button>
           </div>
         </form>
         <p className="text-sm text-center text-gray-600">
